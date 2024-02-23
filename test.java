@@ -1,6 +1,9 @@
 
 public class test {
-    public static void main(String[] args) {
-        String code = "testing 1,2,3";
+    public static void main(String[] args, String string) {
+
+        // testing objects and running tests
+        String code = string;
     }
+
 }
