@@ -18,6 +18,8 @@ Design prototype
 
 Work distribution 
 
+
+
 Work Distribution Infographic:
 
 
