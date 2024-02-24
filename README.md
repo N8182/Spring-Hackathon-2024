@@ -11,9 +11,13 @@ Include a campus map with gps to club meeting locations
 Create an app version
 
 Artifacts:
+
 Source code
+
 Design prototype
+
 Work distribution 
+
 Work Distribution Infographic:
 
 
