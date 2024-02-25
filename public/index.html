@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennesaw State University Clubs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles */
+      
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .header-container {
+            background-color: rgb(254, 197, 38,255);
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 1rem;
+        }
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+        .header-logo img {
+            height: 40px;
+        }
+        .header-logo span {
+            font-weight: 700;
+            margin-left: 0.5rem;
+            color: #000;
+        }
+        .header-icons {
+            display: flex;
+            align-items: center;
+            margin-left: auto; /* This pushes the icon buttons to the right */
+        }
+        .header-icons i {
+            margin: 0 0.5rem;
+        }
+        .header-date {
+            color: #333;
+            font-size: 0.875rem;
+            padding-left: 0.75rem; /* Adjusted padding for alignment */
+        }
+
+        /* Dropdown Button */
+        .dropbtn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        /* Icon hover effect */
+        .dropbtn .fas:hover {
+            color: blue;
+        }
+
+        /* Dropdown Content - Hidden by default */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu when the button is clicked */
+        .show {display:block;}
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Top Banner -->
+    <div class="header-container">
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="https://kennesaw.view.usg.edu/d2l/lp/navbars/6629/theme/viewimage/30449488/view?v=20.24.2.17339" alt="Kennesaw State University logo">
+                <span> CLUB NEST</span>
+            </div>
+            <div class="header-icons">
+                <i class="fas fa-home mx-2"></i>
+                
+                <!-- Dropdown Menu Trigger Button -->
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <i class="fas fa-grip-horizontal mx-2"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <a href="chess-club.html" id="chessClub">Chess Club</a>
+                        <a href="robotics-club.html" id="roboticsClub">Robotics Club</a>
+                        <a href="art-club.html" id="artClub">Art Club</a>
+                    </div>
+                </div>
+                
+                <i class="fas fa-envelope mx-2"></i>
+                <i class="fas fa-bell mx-2"></i>
+                <i class="fas fa-cog mx-2"></i>
+            </div>
+            <div class="user-info">
+                <span class="rounded-full bg-orange-600 text-white px-3 py-1">MT</span>
+            </div>
+        </div>
+        <div class="header-date">
+            &nbsp;&nbsp;Friday, February 23, 2024
+        </div>
+    </div>
+
+    <!-- My Clubs Section -->
+    <div class="container mx-auto p-6">
+        <div class="bg-white p-4 rounded-md shadow-lg">
+            <h2 class="font-bold text-xl mb-4">My Clubs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Chess Club card -->
+                <a href="chess-club.html" class="block">
+                    <div class="bg-white rounded-lg shadow hover:shadow-md transition-shadow duration-150 ease-in-out">
+                        <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chess Club logo placeholder image" class="rounded-t-lg w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Chess Club</h3>
+                            <p class="text-gray-600">A club for chess enthusiasts and competitive players.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Robotics Club card -->
+                <a href="robotics-club.html" class="block">
+                    <div class="bg-white rounded-lg shadow hover:shadow-md transition-shadow duration-150 ease-in-out">
+                        <img src="https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=2839&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Robotics Club logo placeholder image" class="rounded-t-lg w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Robotics Club</h3>
+                            <p class="text-gray-600">Building and competing with robots.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Art Club card -->
+                <a href="art-club.html" class="block">
+                    <div class="bg-white rounded-lg shadow hover:shadow-md transition-shadow duration-150 ease-in-out">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Art Club logo placeholder image" class="rounded-t-lg w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Art Club</h3>
+                            <p class="text-gray-600">Express yourself through various forms of art.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+          <div>
+            <div class="container mx-auto p-6">
+              <div class="bg-white p-4 rounded-md shadow-lg">
+                <!-- Master Calendar Section for Upcoming Events -->
+                <div class="mt-8">
+                    <h3 class="font-bold text-xl">Upcoming Events</h3>
+                    <div class="mt-4">
+                        <!-- Chess Club Events -->
+                        <div class="bg-white rounded-lg shadow p-4 mb-4">
+                            <h4 class="font-semibold text-lg">Chess Club</h4>
+                            <p class="text-gray-600">Next Meeting: <strong>March 1, 2024</strong> at <strong>5 PM</strong> - Room 101</p>
+                            <p class="text-gray-600">Strategy Workshop: <strong>March 15, 2024</strong> at <strong>5 PM</strong> - Room 102</p>
+                        </div>
+                        <!-- Robotics Club Events -->
+                        <div class="bg-white rounded-lg shadow p-4 mb-4">
+                            <h4 class="font-semibold text-lg">Robotics Club</h4>
+                            <p class="text-gray-600">Build Session: <strong>March 5, 2024</strong> at <strong>4 PM</strong> - Lab 204</p>
+                            <p class="text-gray-600">Competition Prep: <strong>March 20, 2024</strong> at <strong>4 PM</strong> - Lab 204</p>
+                        </div>
+                        <!-- Art Club Events -->
+                        <div class="bg-white rounded-lg shadow p-4 mb-4">
+                            <h4 class="font-semibold text-lg">Art Club</h4>
+                            <p class="text-gray-600">Gallery Visit: <strong>March 10, 2024</strong>, All Day - Meet at Campus Gate</p>
+                            <p class="text-gray-600">Workshop: <strong>March 25, 2024</strong> at <strong>6 PM</strong> - Room 305</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+              <div class="container mx-auto p-6">
+                <div class="bg-white p-4 rounded-md shadow-lg">
+              <!-- EXTRAS -->
+              
+              <a
+                <h3 class="font-semibold text-lg">&nbsp  Extra Information</h3>
+             <div class="mb-6">
+                    <ul class="list-disc pl-8">
+                        <li><a href="https://www.facebook.com/chessclub" class="text-blue-500 hover:underline">Other Organizations</a></li>
+                        <li><a href="https://www.instagram.com/chessclub" class="text-blue-500 hover:underline">My Upcoming Events</a></li>
+                      <li><a href="https://www.facebook.com/chessclub" class="text-blue-500 hover:underline">Popular Campus Events</a></li>
+                        <li><a href="https://www.linkedin.com/company/chessclub" class="text-blue-500 hover:underline">Owl Life</</a></li>
+                    </ul>
+                </div>
+                        </div>
+                    </div>
+        </div>
+                </a>
+
+    <!-- JavaScript to handle dropdown -->
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdownContent").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn, .dropbtn *')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        </script>
+        
+</body>
+</html>

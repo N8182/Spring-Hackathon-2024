@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Club Event Calendar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <!-- Chess Club Section -->
+        <div class="bg-white p-4 rounded-md shadow-lg mb-6">
+            <div class="flex flex-col items-center">
+                <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                     alt="Chess Club" 
+                     class="rounded-lg mb-4" 
+                     style="width: 100%; max-width: 256px; height
+                       : auto;">
+                <h2 class="font-bold text-xl mb-4">Chess Club</h2>
+                <p class="text-gray-600 text-center">
+                    Welcome to the Chess Club! Here, chess enthusiasts and competitive players alike gather to 
+                    share their passion for the game, improve their skills, and compete in tournaments.
+                </p>
+            </div>
+        </div>
+
+        <!-- Calendar Section -->
+        <div class="bg-white p-4 rounded-md shadow-lg">
+            <div class="flex items-center justify-between mb-4">
+                <button id="prevMonth" class="p-2 border rounded text-gray-600 hover:bg-gray-100">
+                    <i class="fas fa-chevron-left"></i> Prev
+                </button>
+                <h3 id="monthLabel" class="font-bold text-xl text-center">February 2024</h3>
+                <button id="nextMonth" class="p-2 border rounded text-gray-600 hover:bg-gray-100">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div id="calendar" class="grid grid-cols-6 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-7 gap-4">
+                <!-- Calendar grid will be populated here by the script -->
+            </div>
+        </div>
+    </div>
+           <!-- Comment Form Section -->
+        <div class="bg-white p-4 rounded-md shadow-lg mb-6">
+            <h3 class="font-bold text-xl mb-4">Discussion Board</h3>
+            <form id="commentForm">
+                <textarea id="commentText" class="border rounded w-full p-2 mb-4" placeholder="Add to the discussion..."></textarea>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Post Comment
+                </button>
+            </form>
+            <div id="comments" class="mt-6">
+                <!-- Hardcoded comments and replies -->
+                <div class="comment border p-4 rounded mb-4">
+                    <p>Does anyone want to meet up for extra practice this weekend?</p>
+                    <div class="replies mt-4">
+                        <div class="reply border p-2 rounded mt-2 bg-gray-100">
+                            I'm in! Saturday afternoon works best for me.
+                        </div>
+                        <div class="reply border p-2 rounded mt-2 bg-gray-100">
+                            Would love to, but I've got a tournament. How about next weekend?
+                        </div>
+                    </div>
+                </div>
+                <div class="comment border p-4 rounded mb-4">
+                    <p>Reminder: Chess club t-shirts are in! Pick them up at our next meeting.</p>
+                    <div class="replies mt-4">
+                        <div class="reply border p-2 rounded mt-2 bg-gray-100">
+                            Awesome, can't wait to wear it!
+                        </div>
+                    </div>
+                </div>
+                <div class="comment border p-4 rounded mb-4">
+                    <p>Any tips for improving endgame strategy?</p>
+                    <div class="replies mt-4">
+                        <div class="reply border p-2 rounded mt-2 bg-gray-100">
+                            Practice puzzles! Also, watching analysis videos helped me a lot.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    <script src="script.js"></script>
+  <!-- Content Section -->
+  <div class="bg-white p-4 rounded-md shadow-lg mb-6">
+      <h3 class="font-bold text-xl mb-4">Club Resources</h3>
+
+      <!-- Social Media Subsection -->
+      <div class="mb-6">
+          <h4 class="font-bold text-lg mb-2">Social Media</h4>
+          <ul class="list-disc pl-8">
+              <li><a href="https://www.facebook.com/chessclub" class="text-blue-500 hover:underline">Facebook Page</a></li>
+              <li><a href="https://www.instagram.com/chessclub" class="text-blue-500 hover:underline">Instagram Page</a></li>
+              <li><a href="https://www.linkedin.com/company/chessclub" class="text-blue-500 hover:underline">LinkedIn Page</a></li>
+          </ul>
+      </div>
+
+      <!-- Presentations Subsection -->
+      <div class="mb-6">
+          <h4 class="font-bold text-lg mb-2">Presentations</h4>
+          <ul class="list-disc pl-8">
+              <li><a href="general_board_meeting_presentation.pptx" class="text-blue-500 hover:underline">General Board Meeting</a></li>
+              <li><a href="upcoming_food_drive_presentation.pptx" class="text-blue-500 hover:underline">Upcoming Food Drive</a></li>
+          </ul>
+      </div>
+
+      <!-- Event Flyers Subsection -->
+      <div>
+          <h4 class="font-bold text-lg mb-2">Event Flyers</h4>
+          <ul class="list-disc pl-8">
+              <li><a href="event_flyer1.pdf" class="text-blue-500 hover:underline">Event Flyer 1</a></li>
+              <li><a href="event_flyer2.pdf" class="text-blue-500 hover:underline">Event Flyer 2</a></li>
+          </ul>
+      </div>
+  </div>
+
+</body>
+</html>
