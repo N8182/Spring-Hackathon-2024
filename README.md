@@ -5,7 +5,9 @@ Connects students to club information by creating a cohesive platform that inclu
 
 MVP Features
 Home Page: A welcoming entry point that outlines the platform's purpose and guides users to club information.
+
 Three Mock Clubs: Demonstrates the platform's capability to support multiple clubs with individual pages.
+
 Basic HTML/CSS Design: Ensures accessibility and ease of navigation, laying the groundwork for further development.
 
 Planned Enhancements
